@@ -1,0 +1,115 @@
+<HTML>
+
+    <HEAD>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+	<title>Licznik Kalori</title>
+    
+    
+    </HEAD>
+
+    <BODY>
+        <div id="mainBox">
+
+
+<div id="centerBox">
+        
+		<img id="img1" src="goku.png" alt="Goku">
+		<img id="img2" src="freeza.png" alt="Freeza">
+		
+        <h1>Licznik Kalori</h1>
+        
+		<h2>Płeć</h2>
+		
+		<label><input type="radio" name="gender" id="female" checked="checked" > <a>Kobieta</a></label>
+		<label><input type="radio" name="gender" id="male"> <a>Mężczyzna</a></label>
+		
+		
+		<h2>Waga</h2>
+		<div class="sliderContainer">
+			<input type="range" min="30" max="300" value="1" class="slider" id="wagaSlider">
+			<p><span id="waga"></span> [ Kg ]</p>
+		</div>
+		
+				<h2>Wzrost</h2>
+		<div class="sliderContainer">
+			<input type="range" min="50" max="250" value="1" class="slider" id="wzrostSlider">
+			<p><span id="wzrost"></span> [ Cm ]</p>
+		</div>
+		
+						<h2>Wiek</h2>
+		<div class="sliderContainer">
+			<input type="range" min="10" max="120" value="1" class="slider" id="wiekSlider">
+			<p><span id="wiek"></span> [ Lata ]</p>
+		</div>
+		
+		<h3>Cel</h3>
+		<div class="selectContainer">
+			<select id="cel">
+			<option selected="selected">Wybierz swój cel</option>
+			<option value="300">Chcę przytyć</option>
+			<option value="0">Chcę utrzymać wage</option>
+			<option value="-200">Chcę schudnąć</option>
+			</select>	
+		</div>   
+		
+		
+		<h3>Aktywność Fizyczna</h3>
+		<div class="selectContainer">
+			<select id="aktywnosc">
+			<option selected="selected">Wybierz rodzaj aktywności Fizycznej</option>
+			<option value="1.2">Znikoma</option>
+			<option value="1.4">Mala</option>
+			<option value="1.6">Umiarkowana</option>
+			<option value="1.8">Duża</option>
+			<option value="2.0">Bardzo duża</option>
+			</select>	
+		</div>   
+		
+		</br>
+		
+		<input type="button" value="Oblicz" onClick="obliczWszystko()">
+		
+
+		
+		<table id="tableWynik" border="style: solid">
+			<tr>
+				<td id="wynik"></td>
+				<td id="wynikValue"></td>
+			</tr>
+			<tr>
+				<td id="bialko"></td>
+				<td id="bialkoValue"></td>
+			</tr>
+			<tr>
+				<td id="tluszcz"></td>
+				<td id="tluszczValue"></td>
+			</tr>
+					<tr>
+				<td id="weglowodany"></td>
+				<td id="weglowodanyValue"></td>
+			</tr>
+		</table>
+		
+		
+		<table id="tableZlyWynik" border="style: solid">
+			<tr>
+				<td id="wynikZly"></td>
+			</tr>
+		</table>
+
+</div>   
+        
+<div id="footer"> 
+                    
+        <b>Bartosz Bizon Wszelkie prawa zastrzeżone  &#9415; </b>
+
+</div> 
+</div>
+    </BODY>
+	
+	<FOOTER>
+	        <script src="test.js"></script>
+	</FOOTER>
+
+</HTML>
